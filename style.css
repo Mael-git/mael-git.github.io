@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: verdana;
+    font-size: 20px;
+    background-image: url('img/burgerkingpackaging.jpg');
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(#ba1f1fd8, 50%, rgba(255, 166, 0, 0.836));
+}
+
+p{
+    position: absolute;
+    margin-bottom: 350px;
+    font-family: bezar;
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2.9px;
+}
+
+.box{
+    padding: 5px 5px;
+    margin: 0px 15px;
+    position: relative;
+}
+
+.descrip{
+    text-align: center;
+    background: #FEDB01;
+    padding: 10px 20px;
+    position: absolute;
+    transform: translate(-20%, -80%);
+    border-radius: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+label{
+    cursor: pointer;
+}
+
+img{
+    clip-path: ellipse(50% 50%);
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+body, main, p, div, img, form, input{
+    transition: .1s;
+}
+
+.bg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    transition: .7s;
+}
+
+.modal{
+    background: white;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#show:checked ~ .bg{
+    display: block;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+input[type=text], input[type=password]{
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    border: 1px solid rgba(255, 166, 0, 0.836);
+}
+
+input[type=submit]{
+    padding: 10px 25px;
+    bottom: 0px;
+    position: absolute;
+    background: rgba(255, 166, 0, 0.836);
+    border: none;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover{
+    position: absolute;
+    background: none;
+    border: 1px solid rgba(255, 166, 0, 0.836);
+}
+
+input{
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    top: 0px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.close_btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: rgba(255, 166, 0, 0.836);
+    size: 50px;
+}

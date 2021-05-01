@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transition: .7s;
+}
+
+.modal{
+    background: white;
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close_btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: rgba(255, 166, 0, 0.836);
+    size: 50px;
+}
+
+.demo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    transform: translate(0%, -50%);
+}
+
+.validation{
+  position: absolute;
+  bottom: 0;
+  transform: translate(0%, 50%);
+  margin: 0 auto;
+}
+
+button{
+  margin: 0px 15px;
+  transition: .7s;
+}
+
+.oui{
+  padding: 15px 15px;
+  border: 1px solid rgba(255, 166, 0, 0.836);
+  background: rgba(255, 166, 0, 0.836);
+}
+
+.oui:hover{
+  background: none;
+}
+
+.oui:hover ~ .non{
+  background: rgba(255, 166, 0, 0.836);
+}
+
+.non{
+  padding: 15px 15px;
+  border: 1px solid rgba(255, 166, 0, 0.836);
+  background: none;
+}
+
+.non:hover{
+  background: none;
+}
+
+.non:hover ~ .oui{
+  background: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  transition: .7s;
+}
